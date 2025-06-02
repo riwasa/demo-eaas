@@ -1,9 +1,14 @@
 name: Azure Deployment
-run-name: Azure Deployment - Run: ${{ github.run_id }}
-on: [push]
+
+on: 
+  push
+
+run-name: "Azure Deployment - Run: ${{ github.run_id }}"
+
 jobs:
   First-Stage:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is the first stage of the Azure deployment workflow."
+      - name: First step
+        run: echo "This is the first stage of the Azure deployment workflow."
         
