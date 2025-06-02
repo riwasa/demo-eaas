@@ -1,0 +1,2 @@
+name: Azure Deployment
+run-name: Azure Deployment - Run: ${{ github.run_id}}
