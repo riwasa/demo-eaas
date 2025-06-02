@@ -1,7 +1,8 @@
 name: Azure Deployment
 
 on: 
-  push
+  push:
+  workflow_dispatch:
 
 run-name: "Azure Deployment - Run: ${{ github.run_id }}"
 
