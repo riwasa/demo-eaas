@@ -1,3 +1,4 @@
+# This workflow is triggered when an LOB commits a parameters file.
 name: Azure Deployment
 
 on: 
@@ -8,6 +9,7 @@ run-name: "Azure Deployment - Run: ${{ github.run_id }}"
 
 jobs:
   First-Stage:
+    uses: riwasa/demo-eaas-pattern/.github/workflows/azure-deploy.yaml@main
     runs-on: ubuntu-latest
     steps:
       - name: First step
