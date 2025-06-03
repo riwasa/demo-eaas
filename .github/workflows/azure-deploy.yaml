@@ -9,9 +9,10 @@ run-name: "Azure Deployment - Run: ${{ github.run_id }}"
 
 jobs:
   First-Stage:
-    uses: riwasa/demo-eaas-pattern/.github/workflows/azure-deploy.yaml@main
     runs-on: ubuntu-latest
     steps:
       - name: First step
         run: echo "This is the first stage of the Azure deployment workflow."
-        
+  Second-Stage:
+    uses: riwasa/demo-eaas-pattern/.github/workflows/azure-deploy.yaml@main
+    needs: First-Stage
