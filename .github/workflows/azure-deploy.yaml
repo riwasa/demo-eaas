@@ -20,4 +20,5 @@ jobs:
       pattern_name: "ExamplePattern"
       pattern_size: "Large"
     secrets:
-      token: ${{ secrets.DEMO_EAAS_PATTERN_TOKEN }}
+      inherit
+      #token: ${{ secrets.DEMO_EAAS_PATTERN_TOKEN }}
