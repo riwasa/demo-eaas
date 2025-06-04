@@ -19,6 +19,7 @@ jobs:
     with:
       pattern_name: "ExamplePattern"
       pattern_size: "Large"
+      parameters_file: "hr-lob.json"
     secrets:
       inherit
       #token: ${{ secrets.DEMO_EAAS_PATTERN_TOKEN }}
