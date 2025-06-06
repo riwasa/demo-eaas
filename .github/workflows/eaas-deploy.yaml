@@ -2,9 +2,9 @@
 name: EaaS Deployment
 
 on: 
-  workflow_dispatch:
   pull_request_review:
     types: [submitted]
+  workflow_dispatch:
 
 run-name: "EaaS Deployment - Run: ${{ github.run_id }}"
 
