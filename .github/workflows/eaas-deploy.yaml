@@ -15,10 +15,10 @@ jobs:
   Second-Stage:
     uses: riwasa/demo-eaas-pattern/.github/workflows/eaas-deploy.yaml@main
     needs: First-Stage
-    # with:
+    with:
     #   pattern_name: "ExamplePattern"
     #   pattern_size: "Large"
-    #   parameters_file: "hr-lob.json"
+      parameters_file: "lob.json"
     secrets:
       inherit
       #token: ${{ secrets.DEMO_EAAS_PATTERN_TOKEN }}
