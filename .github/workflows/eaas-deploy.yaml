@@ -1,24 +1,22 @@
 # This workflow is triggered when an LOB commits a parameters file.
-name: Azure Deployment
+name: EaaS Deployment
 
 on: 
   workflow_dispatch:
 
-run-name: "Azure Deployment - Run: ${{ github.run_id }}"
+run-name: "EaaS Deployment - Run: ${{ github.run_id }}"
 
 jobs:
   First-Stage:
     runs-on: ubuntu-latest
     steps:
       - name: First step
-        run: echo "This is the first stage of the Azure deployment workflow."
-  Second-Stage:
+        run: echo "This is the first stage of the EaaS deployment workflow."
+  Deploy-Stage:
+    name: Deploy EaaS
     uses: riwasa/demo-eaas-pattern/.github/workflows/eaas-deploy.yaml@main
     needs: First-Stage
     with:
-    #   pattern_name: "ExamplePattern"
-    #   pattern_size: "Large"
       parameters_file: "lob.json"
     secrets:
       inherit
-      #token: ${{ secrets.DEMO_EAAS_PATTERN_TOKEN }}
