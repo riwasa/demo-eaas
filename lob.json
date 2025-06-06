@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appCatId": {
+      "value": "MRNG-20982"
+    },
+    "azureRegion": {
+      "value": "eastus2"
+    },
+    "azureSubscription": {
+      "value": "4cce9491-5e12-4f54-939f-9d1839d32e6e"
+    },
+    "eaasEndDate": {
+      "value": "2025-12-31"
+    },
+    "eaasRequestorTeam": {
+      "value": "Team 1"
+    },
+    "eaasServiceNowTicketId": {
+      "value": "INC1234567"
+    },
+    "eaasStampSize": {
+      "value": "Medium"
+    }
+  }
+}
