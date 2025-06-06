@@ -6,7 +6,7 @@
       "value": "MRNG-20982"
     },
     "azureRegion": {
-      "value": "eastus2"
+      "value": "canadacentral"
     },
     "azureSubscription": {
       "value": "4cce9491-5e12-4f54-939f-9d1839d32e6e"
@@ -21,7 +21,7 @@
       "value": "INC1234567"
     },
     "eaasStampSize": {
-      "value": "Small"
+      "value": "Medium"
     }
   }
 }
