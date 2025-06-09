@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appCatId": {
-      "value": "MRNG-20985"
+      "value": "MRNG-20986"
     },
     "azureRegion": {
       "value": "canadacentral"
