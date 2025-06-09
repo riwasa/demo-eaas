@@ -16,7 +16,7 @@ jobs:
         run: echo "This is the first stage of the EaaS deployment workflow."
   Deploy-Stage:
     name: Deploy EaaS
-    uses: riwasa/demo-eaas-pattern/.github/workflows/eaas-deploy.yaml@main
+    uses: riwasa/demo-eaas-pattern/.github/workflows/eaas-deploy2.yaml@main
     needs: First-Stage
     with:
       parameters_file: "lob.json"
