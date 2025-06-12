@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appCatId": {
-      "value": "MRNG-20985"
+      "value": "MRNG-20986"
     },
     "azureRegion": {
-      "value": "canadacentral"
+      "value": "eastus2"
     },
     "azureSubscription": {
       "value": "4cce9491-5e12-4f54-939f-9d1839d32e6e"
